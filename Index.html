@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Stye.css">
+    <script src="Adnimation.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 fade-in">
+                    <h1 class="display-4 fw-bold mb-4">Hello, I'm <span class="text-warning">John Doe</span></h1>
+                    <p class="lead mb-4">A passionate web developer specializing in creating beautiful, functional websites and applications.</p>
+                    <div class="d-flex">
+                        <a href="#projects" class="btn btn-light btn-lg me-3">View My Work</a>
+                        <a href="downloadCV/cv.pdf" class="btn btn-outline-light btn-lg download-btn" id="downloadCV" download>
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block text-center fade-in">
+                    <img src="downloadCV/1.jpg" alt="Profile" class="img-fluid rounded-circle" style="max-width: 350px; border: 10px solid rgba(255,255,255,0.2);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5" id="about">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0 fade-in">
+                    <img src="https://picsum.photos/seed/about/600/400.jpg" alt="About Me" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 fade-in">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="lead">I'm a dedicated web developer with a passion for creating elegant, efficient, and user-friendly digital experiences.</p>
+                    <p>With over 5 years of experience in the industry, I've worked on a variety of projects ranging from small business websites to complex web applications. My expertise lies in front-end development, but I'm also proficient in back-end technologies and database management.</p>
+                    <p>I believe in clean code, responsive design, and user-centered development. I'm constantly learning and adapting to new technologies to ensure I deliver the best possible solutions for my clients.</p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-primary me-2" id="downloadCV2">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                        <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-5 bg-light" id="skills">
+        <div class="container py-5">
+            <h2 class="section-title text-center mb-5 fade-in">My Skills</h2>
+            
+            <div class="row mb-5">
+                <div class="col-md-6 fade-in">
+                    <h4 class="mb-4">Technical Skills</h4>
+                    
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>HTML/CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>JavaScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>React.js</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Node.js</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Bootstrap</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 fade-in">
+                    <h4 class="mb-4">Soft Skills</h4>
+                    
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Problem Solving</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Communication</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Teamwork</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Time Management</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Creativity</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h4 class="text-center mb-4 fade-in">Core Competencies</h4>
+            <div class="row">
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="skill-item text-center">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h5>Web Development</h5>
+                        <p>Creating responsive, user-friendly websites with clean, efficient code.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="skill-item text-center">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h5>Responsive Design</h5>
+                        <p>Building websites that look great and function well on all devices.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="skill-item text-center">
+                        <div class="skill-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h5>UI/UX Design</h5>
+                        <p>Designing intuitive, engaging user interfaces and experiences.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="skill-item text-center">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h5>Database Management</h5>
+                        <p>Working with various database systems to store and retrieve data efficiently.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="skill-item text-center">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h5>Backend Development</h5>
+                        <p>Creating server-side logic and APIs to support web applications.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="skill-item text-center">
+                        <div class="skill-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h5>DevOps</h5>
+                        <p>Implementing CI/CD pipelines and managing deployment processes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-5" id="projects">
+        <div class="container py-5">
+            <h2 class="section-title text-center mb-5 fade-in">My Projects</h2>
+            
+            <ul class="nav nav-pills mb-4 justify-content-center fade-in" id="projectTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab">All</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="web-tab" data-bs-toggle="pill" data-bs-target="#web" type="button" role="tab">Web Apps</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="mobile-tab" data-bs-toggle="pill" data-bs-target="#mobile" type="button" role="tab">Mobile Apps</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="design-tab" data-bs-toggle="pill" data-bs-target="#design" type="button" role="tab">Design</button>
+                </li>
+            </ul>
+            
+            <div class="tab-content" id="projectTabsContent">
+                <div class="tab-pane fade show active" id="all" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-4 fade-in">
+                            <div class="card project-card h-100">
+                                <img src="https://picsum.photos/seed/project1/600/400.jpg" class="card-img-top project-img" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">E-commerce Website</h5>
+                                    <p class="card-text">A fully responsive e-commerce platform with shopping cart functionality and payment integration.</p>
+                                    <div class="d-flex mb-2">
+                                        <span class="badge bg-primary me-1">React</span>
+                                        <span class="badge bg-secondary me-1">Node.js</span>
+                                        <span class="badge bg-info">MongoDB</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <a href="#" class="btn btn-sm btn-primary me-2">View Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4 mb-4 fade-in">
+                            <div class="card project-card h-100">
+                                <img src="https://picsum.photos/seed/project2/600/400.jpg" class="card-img-top project-img" alt="Project 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Task Management App</h5>
+                                    <p class="card-text">A productivity application for managing tasks, projects, and team collaboration.</p>
+                                    <div class="d-flex mb-2">
+                                        <span class="badge bg-primary me-1">Vue.js</span>
+                                        <span class="badge bg-secondary me-1">Firebase</span>
+                                        <span class="badge bg-info">Tailwind CSS</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <a href="#" class="btn btn-sm btn-primary me-2">View Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4 mb-4 fade-in">
+                            <div class="card project-card h-100">
+                                <img src="https://picsum.photos/seed/project3/600/400.jpg" class="card-img-top project-img" alt="Project 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fitness Tracker</h5>
+                                    <p class="card-text">A mobile application for tracking workouts, nutrition, and health metrics.</p>
+                                    <div class="d-flex mb-2">
+                                        <span class="badge bg-primary me-1">React Native</span>
+                                        <span class="badge bg-secondary me-1">GraphQL</span>
+                                        <span class="badge bg-info">AWS</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <a href="#" class="btn btn-sm btn-primary me-2">View Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4 mb-4 fade-in">
+                            <div class="card project-card h-100">
+                                <img src="https://picsum.photos/seed/project4/600/400.jpg" class="card-img-top project-img" alt="Project 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Portfolio Website</h5>
+                                    <p class="card-text">A custom portfolio website for a photographer with gallery and booking functionality.</p>
+                                    <div class="d-flex mb-2">
+                                        <span class="badge bg-primary me-1">HTML/CSS</span>
+                                        <span class="badge bg-secondary me-1">JavaScript</span>
+                                        <span class="badge bg-info">PHP</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <a href="#" class="btn btn-sm btn-primary me-2">View Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4 mb-4 fade-in">
+                            <div class="card project-card h-100">
+                                <img src="https://picsum.photos/seed/project5/600/400.jpg" class="card-img-top project-img" alt="Project 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Weather App</h5>
+                                    <p class="card-text">A weather application that provides real-time weather data and forecasts.</p>
+                                    <div class="d-flex mb-2">
+                                        <span class="badge bg-primary me-1">JavaScript</span>
+                                        <span class="badge bg-secondary me-1">API Integration</span>
+                                        <span class="badge bg-info">Bootstrap</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <a href="#" class="btn btn-sm btn-primary me-2">View Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4 mb-4 fade-in">
+                            <div class="card project-card h-100">
+                                <img src="https://picsum.photos/seed/project6/600/400.jpg" class="card-img-top project-img" alt="Project 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Social Media Dashboard</h5>
+                                    <p class="card-text">A dashboard for managing and analyzing social media accounts and engagement.</p>
+                                    <div class="d-flex mb-2">
+                                        <span class="badge bg-primary me-1">Angular</span>
+                                        <span class="badge bg-secondary me-1">Express</span>
+                                        <span class="badge bg-info">PostgreSQL</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <a href="#" class="btn btn-sm btn-primary me-2">View Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="web" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-4 fade-in">
+                            <div class="card project-card h-100">
+                                <img src="https://picsum.photos/seed/project1/600/400.jpg" class="card-img-top project-img" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">E-commerce Website</h5>
+                                    <p class="card-text">A fully responsive e-commerce platform with shopping cart functionality and payment integration.</p>
+                                    <div class="d-flex mb-2">
+                                        <span class="badge bg-primary me-1">React</span>
+                                        <span class="badge bg-secondary me-1">Node.js</span>
+                                        <span class="badge bg-info">MongoDB</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <a href="#" class="btn btn-sm btn-primary me-2">View Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4 mb-4 fade-in">
+                            <div class="card project-card h-100">
+                                <img src="https://picsum.photos/seed/project4/600/400.jpg" class="card-img-top project-img" alt="Project 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Portfolio Website</h5>
+                                    <p class="card-text">A custom portfolio website for a photographer with gallery and booking functionality.</p>
+                                    <div class="d-flex mb-2">
+                                        <span class="badge bg-primary me-1">HTML/CSS</span>
+                                        <span class="badge bg-secondary me-1">JavaScript</span>
+                                        <span class="badge bg-info">PHP</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <a href="#" class="btn btn-sm btn-primary me-2">View Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4 mb-4 fade-in">
+                            <div class="card project-card h-100">
+                                <img src="https://picsum.photos/seed/project5/600/400.jpg" class="card-img-top project-img" alt="Project 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Weather App</h5>
+                                    <p class="card-text">A weather application that provides real-time weather data and forecasts.</p>
+                                    <div class="d-flex mb-2">
+                                        <span class="badge bg-primary me-1">JavaScript</span>
+                                        <span class="badge bg-secondary me-1">API Integration</span>
+                                        <span class="badge bg-info">Bootstrap</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <a href="#" class="btn btn-sm btn-primary me-2">View Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="mobile" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-4 fade-in">
+                            <div class="card project-card h-100">
+                                <img src="https://picsum.photos/seed/project3/600/400.jpg" class="card-img-top project-img" alt="Project 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fitness Tracker</h5>
+                                    <p class="card-text">A mobile application for tracking workouts, nutrition, and health metrics.</p>
+                                    <div class="d-flex mb-2">
+                                        <span class="badge bg-primary me-1">React Native</span>
+                                        <span class="badge bg-secondary me-1">GraphQL</span>
+                                        <span class="badge bg-info">AWS</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <a href="#" class="btn btn-sm btn-primary me-2">View Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="design" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-4 fade-in">
+                            <div class="card project-card h-100">
+                                <img src="https://picsum.photos/seed/project4/600/400.jpg" class="card-img-top project-img" alt="Project 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Portfolio Website</h5>
+                                    <p class="card-text">A custom portfolio website for a photographer with gallery and booking functionality.</p>
+                                    <div class="d-flex mb-2">
+                                        <span class="badge bg-primary me-1">HTML/CSS</span>
+                                        <span class="badge bg-secondary me-1">JavaScript</span>
+                                        <span class="badge bg-info">PHP</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <a href="#" class="btn btn-sm btn-primary me-2">View Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light" id="testimonials">
+        <div class="container py-5">
+            <h2 class="section-title text-center mb-5 fade-in">What Clients Say</h2>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 fade-in">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://picsum.photos/seed/person1/200/200.jpg" alt="Client" class="testimonial-avatar">
+                            <div>
+                                <h5 class="mb-0">Sarah Johnson</h5>
+                                <p class="text-muted mb-0">Marketing Director</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">"John did an amazing job on our website. He understood our requirements perfectly and delivered a site that exceeded our expectations. Highly recommended!"</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 fade-in">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://picsum.photos/seed/person2/200/200.jpg" alt="Client" class="testimonial-avatar">
+                            <div>
+                                <h5 class="mb-0">Michael Chen</h5>
+                                <p class="text-muted mb-0">Tech Startup Founder</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">"Working with John was a pleasure. He built us a custom web application that has significantly improved our workflow. His technical skills and communication were outstanding."</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 fade-in">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://picsum.photos/seed/person3/200/200.jpg" alt="Client" class="testimonial-avatar">
+                            <div>
+                                <h5 class="mb-0">Emily Rodriguez</h5>
+                                <p class="text-muted mb-0">Photographer</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">"John created a beautiful portfolio website for my photography business. It's responsive, easy to manage, and has helped me attract more clients. Thank you!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5" id="contact">
+        <div class="container py-5">
+            <h2 class="section-title text-center mb-5 fade-in">Get In Touch</h2>
+            
+            <div class="row">
+                <div class="col-lg-5 mb-4 mb-lg-0 fade-in">
+                    <div class="bg-light p-4 rounded shadow-sm">
+                        <h4 class="mb-4">Contact Information</h4>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <p class="mb-0">123 Web Developer St, San Francisco, CA 94107</p>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <p class="mb-0">contact@myportfolio.com</p>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fas fa-phone-alt contact-icon"></i>
+                            <p class="mb-0">(123) 456-7890</p>
+                        </div>
+                        
+                        <h5 class="mb-3">Follow Me</h5>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 fade-in">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4">Send Me a Message</h4>
+                            
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Your Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 My Portfolio. All rights reserved.</p>
+                </div>
+                
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast-container">
+        <div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true" id="messageToast">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="fas fa-check-circle me-2"></i>
+                    <span id="toastMessage">Message sent successfully!</span>
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
